@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function vally()
+            {
+var uname=c.un.value;
+if(uname<=0){
+alert("Enter username");
+return false;
+            }
+            var pw=c.p.value;
+            if(pw.length<=0)
+            {
+                alert("enter pass");
+                c.p.focus();
+                return false;
+            }
+            var mail=c.mai.value;
+            if(mail.length<=0)
+            {
+                alert("Enter username");
+                c.mai.focus();
+return false;
+            }
+            else
+            {
+                let flag=false;
+                for(i=0;i<mail.length;i++)
+            {
+                if(mail.charAt(i)=="@")
+            {
+                flag=true;
+            }
+            }
+            if(!flag)
+            {
+                alert("Enter correct mail");
+                c.mai.focus();
+return false;
+            }
+            }
+            alert("success");
+            }
+        </script>
+    </head>
+    <body>
+        <form name="c">
+
+                <table align="center" class="t" cellspacing="26">
+                    <h3 align="center" class="he">form</h3>
+                    <tr>
+                        <td>Name:* </td><td><input type="text" name="un" ></td>
+</tr>
+<tr>
+    <td>password:* </td><td><input type="password" name="p" ></td>
+</tr>
+<tr>
+    <td>email:* </td><td><input type="email" name="mai"></td>
+</tr>
+<tr>
+    <td>ph:* </td>
+    <td><input type="number"></td>
+</tr>
+<tr>
+    <td>gender:*</td>
+    <td><input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female</td>
+    </tr>
+    <tr>
+        <td valign="top">Lanugaes Known:</td>
+    <td><input type="checkbox" name="Lanugaes" id="1">hindi <br>
+        <input type="checkbox" name="Lanugaes" id="1">telugu <br>
+        <input type="checkbox" name="Lanugaes" id="1">english</td>
+    </tr>
+    <tr><td>
+        address :
+    </td> <td><textarea name="address"></textarea></td></tr>
+    <tr><td></td>
+        <td>
+            <input type="button" value="Submit" onclick="vally()">
+            <input type="reset" value="reset">
+            
+        </td></tr>
+    </table>
+</form>
+</body>
+</html>
+<style>
+    .t{
+        background-color: aquamarine;
+        background-position: 0%;
+    }
+   
+</style>
