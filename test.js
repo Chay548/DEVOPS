@@ -15,10 +15,10 @@ async function runTest() {
 
         // Find the input elements and enter values
         const num1 = await driver.findElement(By.id('num1'));
-        await num1.sendKeys('50');
+        await num1.sendKeys('48');
 
         const num2 = await driver.findElement(By.id('num2'));
-        await num2.sendKeys('10');
+        await num2.sendKeys('500');
 
         // Click the "Add" button
         const addButton = await driver.findElement(By.id('add'));
