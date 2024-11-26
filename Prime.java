@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PrimeNumber {
+public class Prime {
     public static void main(String[] args) {
         int num = 48;
 
